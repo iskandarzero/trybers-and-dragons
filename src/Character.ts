@@ -77,7 +77,7 @@ export default class Character implements Fighter {
     this._lifePoints = this._maxLifePoints;
   }
 
-  special(enemy: Fighter): void | undefined {
+  special(enemy: SimpleFighter): void | undefined {
     console.log('Last Dance!');
     
     enemy.receiveDamage(this.strength * 3);
